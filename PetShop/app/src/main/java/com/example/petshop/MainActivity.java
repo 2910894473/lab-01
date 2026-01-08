@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
 
         petList.add(cat);
         petList.add(dog);
-        petList.add(dog);
 
         Scorpion scorpion = new Scorpion("Scorponok");
         petList.add(scorpion);
