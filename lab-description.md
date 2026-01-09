@@ -139,7 +139,7 @@
 
     ```java
     public interface Pettable {
-      public Void pet();
+      public void pet();
     }
     ```
    
