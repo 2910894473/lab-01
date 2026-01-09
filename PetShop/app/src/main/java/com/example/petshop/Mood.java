@@ -2,8 +2,25 @@ package com.example.petshop;
 
 import java.util.Date;
 
-public class Mood {
-    private Date recordedDate;
+public abstract class Mood {
+    private Date moodDate;
 
+    public Mood(Date moodDate) {
+        this.moodDate = moodDate;
+    }
+
+    public Mood() {
+        this.moodDate = new Date();
+    }
+
+    public Date getMoodDate() {
+        return moodDate;
+    }
+
+    public void setMoodDate(Date moodDate) {
+        this.moodDate = moodDate;
+    }
+
+    public abstract String getMood();
 
 }
