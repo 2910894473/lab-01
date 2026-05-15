@@ -25,7 +25,7 @@ This software cannot be publicly posted under any circumstances, whether by
 the original student or by a third party.
 If this software is found in any public website or public repository, the
 person finding it is kindly requested to immediately report, including
-the URL or other repository locating information, to the following email
-addresses:
+the URL or other repository locating information, to the current CMPUT 301
+course instructors and/or to the following email addresses:
 
           hktang@ualberta.ca
