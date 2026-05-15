@@ -172,27 +172,16 @@
     ```
 
 ## 3. Lab 1 Participation Exercise
-
 1. Add three new model classes to `PetShop`:
-   - An abstract base class which represents the current `Mood`.
-   - Two non-abstract classes which represent different moods (Ex: happy, sad, etc.) and inherit from the abstract class.
-2. Each mood should have a date, and getters and setters to access the date.
-3. Provide two constructors:
-   - One that sets the date to a default
-   - One that takes a date as an argument
-4. Follow proper encapsulation principles.
-5. Each mood should have a method which returns a string representing that mood.
-6. Your new code should demonstrate:
-   - Classes
-   - Methods
-   - Attributes
-   - Access modifiers
-   - Encapsulation
-   - Constructors
-   - Inheritance
-   - Abstract base classes
-7. Update the `README.md` file with your details and references/collaborators.
-8. Update the `LICENSE.md` file with your full name.
+   - An abstract base class which represents the current `Mood`
+   - Two non-abstract classes which represent different moods (Ex: happy, sad, etc.) and inherit from the abstract class    
+2. Each mood should have at least a date attribute of type `String`
+3. Each mood should have a method that returns a string representing that mood
+   - Hint: the abstract class should provide an abstract method for the subclasses to override, and provide a concrete implementation for    
+4. Update the `README.md` file with your details and references/collaborators
+5. Update the `LICENSE.md` file with your full name.
 
 > [!CAUTION]
-> Make sure to commit **and** push your code to the GitHub repository before the deadline!
+> Before the deadline:
+> - Make sure to **add, commit, and push your code to your GitHub repository**
+> - Finally, **submit the link to your GitHub repository on Canvas**
