@@ -9,11 +9,10 @@
 3. Refer to the lab 1 slides for information about how the labs will work.
 
 ## 2. Walkthrough
-
 1. Create a new `PetShop` project on Android Studio (File > New > New Project > Select "Empty Views Activity").
 
-    > [!WARNING]
-    > Make sure that the project language is **Kotlin**, not Java!
+> [!WARNING]
+> Make sure that the project language is **Kotlin**, not Java!
 
 2. Create a new `Pet` class by navigating to File > New > Kotlin Class/File
 3. Create a primary constructor for the `Pet` class, with the following attributes:
@@ -26,25 +25,25 @@
    
     > Use Alt + Enter (Windows) or Option + Return (Mac) to import any packages
 
-    > [!IMPORTANT]
-    > Access modifiers:
-    > - `public` : universal access
-    > - `private` : class-only access
-    > - `protected` : package and inheritance access
-    > - `No modifier` : public by default in Kotlin
-    >
-    > Variable declaration:
-    > - `val` : read-only
-    > - `var` : read-write  
+> [!IMPORTANT]
+> Access modifiers:
+> - `public` : universal access
+> - `private` : class-only access
+> - `protected` : package and inheritance access
+> - `No modifier` : public by default in Kotlin
+>
+> Variable declaration:
+> - `val` : read-only
+> - `var` : read-write  
 
-5. Instantiate a `Pet` in MainActivity by passing in `String name` and `Int age` arguments:
+4. Instantiate a `Pet` in MainActivity by passing in `String name` and `Int age` arguments:
 
     > For example:
     ```kotlin
     val pet = Pet("Coco", 6)
     ```
 
-6. Make a `Cat` subclass of `Pet`
+5. Make a `Cat` subclass of `Pet`
     - Add the keyword `open` to the `Pet` class to allow inheritance and overriding
     ```kotlin
     open class Pet(name: String, age: Int)
@@ -56,14 +55,14 @@
     class Cat(name: String, age: Int): Pet(name, age) 
     ```
 
-8. Make the Pet Class Abstract
+6. Make the Pet Class Abstract
     - Change the `Pet` class declaration to the following:
     ```kotlin
     abstract class Pet(val name: String, var age: Int)
     ```
 
-    > [!NOTE]
-    > Abstract classes cannot be instantiated directly - they can only be used as base classes for inheritance. You must create concrete subclasses to create objects.
+> [!NOTE]
+> Abstract classes cannot be instantiated directly - they can only be used as base classes for inheritance. You must create concrete subclasses to create objects.
 
     - Change the `Pet` to a `Cat` in MainActivity
     ```kotlin
@@ -77,10 +76,10 @@
     }
     ```
 
-    > [!NOTE]
-    > Abstract methods have no implementation and cannot be called directly. They must be overridden by concrete subclasses before they can be used through objects of those subclasses.
+> [!NOTE]
+> Abstract methods have no implementation and cannot be called directly. They must be overridden by concrete subclasses before they can be used through objects of those subclasses.
 
-9. Method Overriding
+7. Method Overriding
     - `Cat` must override the abstract `speak()` method from the `Pet` class, using the `override` keyword
     - Each child class can implement `speak()` differently based on its needs
 
@@ -92,7 +91,7 @@
     }
     ```
 
-10. Make a `Dog` subclass of `Pet`
+8. Make a `Dog` subclass of `Pet`
     - This will be similar to what we did for the `Cat` subclass
     - `speak()` method should return `"bark"`
    
@@ -120,7 +119,7 @@
     val pets = mutableListOf(cat, dog)
     ```
 
-11. Make a `Scorpion` subclass of `Pet`
+9. Make a `Scorpion` subclass of `Pet`
     - `speak()` method should return `"hiss"`
     ```kotlin
     class Scorpion(name: String, age: Int): Pet(name, age) {
@@ -136,7 +135,7 @@
     pets.add(scorpion)
     ```
 
-12. Interface Implementation
+10. Interface Implementation
     - Abstract method and base class so all the classes have the `speak()` method
     - An interface can also be used to force the use of some methods
     ```kotlin
