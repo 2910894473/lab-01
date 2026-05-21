@@ -9,7 +9,7 @@
 3. Refer to the lab 1 slides for information about how the labs will work.
 
 ## 2. Walkthrough
-1. Create a new `PetShop` project on Android Studio (File > New > New Project > Select "Empty Views Activity").
+1. Create a new `PetShop` project on Android Studio (File > New > New Project > Select "Empty Activity").
 
 > [!WARNING]
 > Make sure that the project language is **Kotlin**, not Java!
