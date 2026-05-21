@@ -177,10 +177,17 @@
 2. Each mood should have at least a date attribute of type `String`
 3. Each mood should have a method that returns a string representing that mood
    - Hint: the abstract class should provide an abstract method for the subclasses to override, and provide a concrete implementation for    
-4. Update the `README.md` file with your details and references/collaborators
-5. Update the `LICENSE.md` file with your full name.
 
-> [!CAUTION]
-> Before the deadline:
-> - Make sure to **add, commit, and push your code to your GitHub repository**
-> - Finally, **submit the link to your GitHub repository on Canvas**
+## 4. Submission Specifications
+1. Fork and then clone this repository
+    - Make sure your forked repository is **public**
+    - Hint: Use `git clone`
+3. Add your `PetShop` Android Studio Project to your forked repository
+    - Hint: Use `git add`, `git commit`, and `git push`
+4. Update the `README.md` file with your details and references/collaborators
+5. Update the `LICENSE.md` file with your full name
+6. Submit the link to your GitHub repository on Canvas
+
+> [!IMPORTANT]
+> - This lab is graded on a complete/incomplete basis. You will receive a “complete” if you finish the walkthrough, complete the participation exercise, and follow ALL submission requirements. You will receive an “incomplete” if any of these requirements are not met, such as an inaccessible (non-public) repository, missing participation exercise, or an incorrect submission.
+> - **There will be no exceptions, partial marks, or late submissions allowed.**
