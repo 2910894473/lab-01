@@ -64,9 +64,10 @@
 > [!NOTE]
 > Abstract classes cannot be instantiated directly - they can only be used as base classes for inheritance. You must create concrete subclasses to create objects.
 
+7. Continue Updating the Pet Class
     - Change the `Pet` to a `Cat` in MainActivity
     ```kotlin
-    val pet = Cat("Coco", 6)
+    val cat = Cat("Coco", 6)
     ```
 
     - Add an abstract method for speaking in the `Pet` class. It has no implementation and must be overridden by a child class to add functionality
@@ -79,7 +80,7 @@
 > [!NOTE]
 > Abstract methods have no implementation and cannot be called directly. They must be overridden by concrete subclasses before they can be used through objects of those subclasses.
 
-7. Method Overriding
+8. Method Overriding
     - `Cat` must override the abstract `speak()` method from the `Pet` class, using the `override` keyword
     - Each child class can implement `speak()` differently based on its needs
 
@@ -91,7 +92,7 @@
     }
     ```
 
-8. Make a `Dog` subclass of `Pet`
+9. Make a `Dog` subclass of `Pet`
     - This will be similar to what we did for the `Cat` subclass
     - `speak()` method should return `"bark"`
    
@@ -119,7 +120,7 @@
     val pets = mutableListOf(cat, dog)
     ```
 
-9. Make a `Scorpion` subclass of `Pet`
+10. Make a `Scorpion` subclass of `Pet`
     - `speak()` method should return `"hiss"`
     ```kotlin
     class Scorpion(name: String, age: Int): Pet(name, age) {
@@ -130,12 +131,20 @@
     ```
     
     - Add scorpion to our list of Pets in MainActivity:
+    ```kotlin
+    val scorpion = Scorpion("Stinger", 32)
+    ```
     - Add the following to `MainActivity`:
     ```kotlin
     pets.add(scorpion)
     ```
+    or
+    ```kotlin
+    val pets = mutableListOf(cat, dog, scorpion)
+    ```
+    
 
-10. Interface Implementation
+12. Interface Implementation
     - Abstract method and base class so all the classes have the `speak()` method
     - An interface can also be used to force the use of some methods
     ```kotlin
@@ -153,9 +162,10 @@
         ...
     }
     ```
-    - All classes that implement this interface must provide implementations for these methods
+    
+    - All classes that implement this interface **must** provide implementations for these methods
 <br></br>
-    > For example, for `Cat`:
+    > For example, in the `Cat` class:
     ```kotlin
     override fun pet() {
         println("The cat $name is being petted")
@@ -168,6 +178,10 @@
     pettablePets.add(cat)
     pettablePets.add(dog)
     pettablePets.add(scorpion) // should raise an error
+    ```
+    or
+    ```kotlin
+    val pettablePets = mutableListOf<Pettable>(cat, dog, scorpion)
     ```
 
 ## 3. Lab 1 Participation Exercise
