@@ -1,4 +1,4 @@
-# CMPUT 301 - Lab 1: Java, OOP, and Android Studio!
+# CMPUT 301 - Lab 1: Kotlin, OOP, and Android Studio!
 
 ## 1. Setup Instructions
 
