@@ -46,7 +46,7 @@
 5. Make a `Cat` subclass of `Pet`
     - Add the keyword `open` to the `Pet` class to allow inheritance and overriding
     ```kotlin
-    open class Pet(name: String, age: Int)
+    open class Pet(val name: String, var age: Int)
     ```
 
     - Create a new `Cat` class by navigating to File > New > Kotlin Class/File
